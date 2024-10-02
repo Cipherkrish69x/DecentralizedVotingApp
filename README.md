@@ -37,3 +37,45 @@ Before you begin, ensure you have the following installed:
    ```bash
    git clone https://github.com/Cipherkrish69x/DecentralizedVotingApp.git
    cd DecentralizedVotingApp
+
+   Install the backend dependencies:
+
+bash
+Copy code
+cd voting-frontend
+npm install
+Install Truffle dependencies:
+
+bash
+Copy code
+cd ../
+npm install
+Running the Application
+Start Ganache to create a local Ethereum blockchain:
+
+bash
+Copy code
+ganache-cli
+Deploy the smart contracts to the local blockchain:
+
+bash
+Copy code
+truffle migrate --network development
+Start the React application:
+
+bash
+Copy code
+cd voting-frontend
+npm start
+Open your browser and go to http://localhost:3000 to access the application.
+
+Usage
+Users can select a candidate and cast their vote.
+The application displays the list of candidates along with their current vote counts.
+Voting results are updated in real time.
+Testing
+To run unit tests for the smart contracts, navigate to the root directory and execute:
+
+bash
+Copy code
+truffle test
